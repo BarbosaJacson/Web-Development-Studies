@@ -1,5 +1,5 @@
 
-  /* 1. CONFIGURAÇÃO GLOBAL (BODY) */
+ /* 1. CONFIGURAÇÃO GLOBAL (BODY) */
 body {
     font-family: Arial, sans-serif;
     background-color: #444444; 
@@ -14,8 +14,8 @@ body {
 
 /* 2. ESTRUTURA DO PORTFÓLIO (DESKTOP POR PADRÃO) */
 .container {
-    display: flex;
-    flex-direction: row; /* LADO A LADO no PC */
+    display: flex !important; 
+    flex-direction: row !important; /* FORÇA LADO A LADO NO PC */
     flex-wrap: wrap; 
     justify-content: center;
     align-items: center;
@@ -65,9 +65,9 @@ nav a:hover {
     border-bottom: 2px solid;
 }
 
-h1 { margin: 0; font-size: 2.5rem; }
-h2 { margin: 10px 0; font-weight: normal; font-size: 1.0rem; }
-p { line-height: 1.6; }
+h1 { margin: 0; font-size: 2.5rem; color: inherit; } /* inherit faz usar a cor do pai */
+h2 { margin: 10px 0; font-weight: normal; font-size: 1.0rem; color: inherit; }
+p { line-height: 1.6; color: inherit; }
 
 .seneca-quote {
     border-left: 4px solid #ffffff;
@@ -83,11 +83,10 @@ p { line-height: 1.6; }
     font-weight: bold;
     color: #ffffff;
 }
-
 /* 4. AJUSTE PARA CELULAR (MOBILE) */
 @media (max-width: 768px) {
     .container {
-        flex-direction: column; /* EMPILHA foto e texto no celular */
+        flex-direction: column !important; /* FORÇA EMPILHAMENTO NO CELULAR */
         text-align: center;
     }
 
