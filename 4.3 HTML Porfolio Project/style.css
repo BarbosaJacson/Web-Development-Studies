@@ -1,5 +1,10 @@
 
- /* 1. CONFIGURAÇÃO GLOBAL (BODY) */
+/* RESET GLOBAL */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 body {
     font-family: Arial, sans-serif;
     background-color: #444444; 
@@ -16,18 +21,19 @@ body {
 .container {
     display: flex !important; 
     flex-direction: row !important; /* FORÇA LADO A LADO NO PC */
-    flex-wrap: wrap; 
+    flex-wrap: nowrap !important;  /* Impede que a foto "pule" para cima do texto no PC */
     justify-content: center;
     align-items: center;
-    gap: 30px; 
-    max-width: 1000px; 
+    gap: 40px; 
+    max-width: 1100px; 
     width: 100%;
 }
 
 .info-section {
-    padding-left: 40px; /* Espaço entre foto e texto no PC */
+    padding-left: 20px; 
     display: flex;
     flex-direction: column;
+    max-width: 650px; /* Limita o texto para garantir espaço para a foto no PC */
 }
 
 /* --- CORES ESPECÍFICAS PARA O INDEX (Fundo Escuro) --- */
@@ -35,7 +41,7 @@ body {
 .info-section h2 { color: #cccccc; }
 .info-section p { color: #eeeeee; }
 .info-section .professional-path { color: #dddddd; }
-.info-section nav a { color: #ffffff; } /* Links brancos no index */
+.info-section nav a { color: #ffffff; }
 
 .profile-img {
     width: 250px;
@@ -65,7 +71,7 @@ nav a:hover {
     border-bottom: 2px solid;
 }
 
-h1 { margin: 0; font-size: 2.5rem; color: inherit; } /* inherit faz usar a cor do pai */
+h1 { margin: 0; font-size: 2.5rem; color: inherit; }
 h2 { margin: 10px 0; font-weight: normal; font-size: 1.0rem; color: inherit; }
 p { line-height: 1.6; color: inherit; }
 
@@ -83,16 +89,20 @@ p { line-height: 1.6; color: inherit; }
     font-weight: bold;
     color: #ffffff;
 }
+
 /* 4. AJUSTE PARA CELULAR (MOBILE) */
 @media (max-width: 768px) {
     .container {
-        flex-direction: column !important; /* FORÇA EMPILHAMENTO NO CELULAR */
+        flex-direction: column !important; /* Inverte para pilha no celular */
+        flex-wrap: wrap !important;      /* Permite a quebra de linha no celular */
         text-align: center;
+        gap: 20px;
     }
 
     .info-section {
-        padding-left: 0; /* Remove o espaço lateral no celular */
+        padding-left: 0; 
         align-items: center;
+        max-width: 100%; /* No celular, o texto ocupa a largura toda */
     }
 
     nav ul {
@@ -102,6 +112,6 @@ p { line-height: 1.6; color: inherit; }
     }
     
     .profile-img {
-        width: 200px; /* Foto um pouco menor no celular */
+        width: 200px;
     }
 }
