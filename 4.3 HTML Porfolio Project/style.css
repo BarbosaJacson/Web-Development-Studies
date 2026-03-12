@@ -7,7 +7,7 @@
 }
 body {
     font-family: Arial, sans-serif;
-    background-color: #1a1a1a; /* Cinza bem escuro */
+    background-color: #e0e0e0; /* Cinza claro para o fundo da página */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,7 +29,7 @@ body {
     /* O SEGREDO DO CARTÃO ESTÁ AQUI: */
     max-width: 900px;         /* Limita a largura para não expandir na tela toda */
     width: 100%;             /* Garante que seja responsivo em telas menores */
-    background-color: #333333; /* Uma cor levemente diferente do fundo (body) */
+    background-color: #e0e0e0 !important; /* Cinza claro no cartão */
     padding: 40px;           /* Espaço interno para o texto não encostar na borda */
     border-radius: 15px;     /* Arredonda os cantos para parecer um cartão */
     border: 1px solid #444444; /* Uma borda sutil ajuda a definir o limite */
