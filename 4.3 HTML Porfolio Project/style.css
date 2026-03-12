@@ -29,10 +29,10 @@ body {
     /* O SEGREDO DO CARTÃO ESTÁ AQUI: */
     max-width: 900px;         /* Limita a largura para não expandir na tela toda */
     width: 100%;             /* Garante que seja responsivo em telas menores */
-    background-color: #2c2c2c !important; /* Cinza grafite escuro */
+    background-color: #504f4f !important; /* Cinza grafite escuro */
     padding: 40px;           /* Espaço interno para o texto não encostar na borda */
     border-radius: 15px;     /* Arredonda os cantos para parecer um cartão */
-    border: 1px solid #444444; /* Uma borda sutil ajuda a definir o limite */
+    border: 1px solid #1d1d1d; /* Uma borda sutil ajuda a definir o limite */
     box-shadow: 0 10px 30px rgba(0,0,0,0.5); /* Sombra para dar profundidade */
 }
 .profile-section {flex-shrink: 0;} /* Garante que a foto não seja espremida */
