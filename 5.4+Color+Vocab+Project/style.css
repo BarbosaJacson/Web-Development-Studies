@@ -1,0 +1,26 @@
+/* 1. SELETOR DE CLASSE: O que é comum a todos */
+.color-title {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    }
+
+
+#red {
+    color: red;
+}
+
+#blue {
+    color: blue;
+}
+
+#orange {
+    color: orange;
+}
+
+#green {
+    color: green;
+}
+
+#yellow {
+    color: yellow;
+}

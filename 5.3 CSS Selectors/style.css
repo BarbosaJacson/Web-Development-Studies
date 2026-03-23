@@ -5,3 +5,21 @@ ol {
 }
 
 /* Write your CSS below, don't change the rules above. */
+* {
+  text-align: center;
+}
+p.note {
+  color: #e01313;
+  font-size: 20px;
+}
+
+li.note[value="4"] {
+  color: #1410d4;
+}
+li.note[id="id-selector-demo"][value="3"] {
+  color: #0d9c0d; 
+}
+
+ol {
+  font-size: 20px;
+}

@@ -3,18 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/jpeg" href="foto.jpeg">
     <title>About Me | Jacson Barbosa</title>
+    
     <style>
         /* Reutilizando sua identidade visual */
         body {
             font-family: Arial, sans-serif;
             background-color: #444444; 
-            display: flex;
+            display: block !important; /* Isso cancela o Flexbox do style.css */
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
+            min-height: auto !important; 
             margin: 0;
-            padding: 20px;
+            padding: 40px 20px !important;
+         
         }
 
         .container {

@@ -26,10 +26,10 @@ body {
     align-items: center;
     gap: 40px;
     
-    /* O SEGREDO DO CARTÃO ESTÁ AQUI: */
+    /* O CARTÃO ESTÁ AQUI: */
     max-width: 900px;         /* Limita a largura para não expandir na tela toda */
     width: 100%;             /* Garante que seja responsivo em telas menores */
-    background-color: #504f4f !important; /* Cinza grafite escuro */
+    background-color: #504f4f !important; /* Cinza grafite claro */
     padding: 40px;           /* Espaço interno para o texto não encostar na borda */
     border-radius: 15px;     /* Arredonda os cantos para parecer um cartão */
     border: 1px solid #1d1d1d; /* Uma borda sutil ajuda a definir o limite */
