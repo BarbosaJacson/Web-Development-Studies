@@ -147,17 +147,38 @@ p { line-height: 1.6; color: inherit; }
 @media (min-width: 900px) {
     .container.about-container {
         width: 90% !important;
-        max-width: 1800px !important;
+        max-width: 1920px !important;
         padding: 60px 80px !important; /* Padding luxuoso só no PC */
         justify-content: center;
         flex-direction: column;
-        min-height: 85vh !important;  /* 'vh' significa Viewport Height. 85vh = 85% da altura da tela */
+        min-height: 90vh !important;  /* 'vh' significa Viewport Height. 90vh = 90% da altura da tela */
         display: flex !important;
     }
 
+    .about-container h1 {
+        font-size: 3.5rem !important; 
+        margin-bottom: 30px;
+    }
+
+    /* Os subtítulos (1, 2, 3) */
+    .about-container h3 {
+        font-size: 1.8rem !important; 
+        margin-top: 40px;
+    }
+
+    /* O corpo do texto (Onde você sugeriu 2.2rem) */
     .about-container p {
-        text-align: justify !important; /* NO PC: Justificado fica elegante */
-        font-size: 1.1rem;
+        text-align: justify !important;
+        /* Minha sugestão: 1.3rem a 1.4rem. 
+           É um tamanho "Premium" que passa autoridade sem exagerar. */
+        font-size: 1.35rem !important; 
+        line-height: 1.8 !important; /* Espaçamento entre linhas é vital aqui */
+        
+        /* IMPORTANTE: Não deixe o texto esticar os 1800px inteiros.
+           Mantenha o container do texto centralizado para o olho não cansar. */
+        max-width: 1000px; 
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
