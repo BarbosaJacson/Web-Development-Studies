@@ -170,10 +170,12 @@ p { line-height: 1.6; color: inherit; }
 
     /* 2. ORGANIZANDO O MENU (NAV) */
     .about-container nav {
+        
         margin-bottom: 50px;
         width: 100%;
     }
     .about-container nav ul {
+        font-size: 2.0rem !important;
         display: flex;
         justify-content: center;
         gap: 30px;
@@ -200,6 +202,7 @@ p { line-height: 1.6; color: inherit; }
         font-size: 2.2rem !important; 
         line-height: 1.8 !important;
         color: #333;
+        text-align: justify; /* Justificado para melhor leitura em telas grandes */
     }
 }
 /* --- AJUSTE PARA O "GIRO" DO CELULAR --- */
