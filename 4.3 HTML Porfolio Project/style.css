@@ -126,67 +126,41 @@ p { line-height: 1.6; color: inherit; }
 /* --- ESTILOS EXCLUSIVOS PARA A PÁGINA ABOUT --- */
 
 /* 1. O Card do About (Branco/Cinza claro para leitura) */
+/* --- ESTILO BASE (VALE PARA TUDO) --- */
 .container.about-container {
-    background-color: #d3d3d3 !important; /* Cor que você estava usando no interno */
-    display: block !important;           /* Garante que o texto ocupe a largura toda */
-    max-width: 1200px;
-    width: 90% !important; /* Garante que seja responsivo em telas menores */   
-    padding: 60px 80px !important;
-    margin: 50px auto !important;
-    text-align: left;
-}
-
-/* 2. Ajuste de cores de texto para o card claro */
-.about-container h1{
-    font-size: 3rem !important;
-    margin-bottom: 30px;
-} 
-.about-container h3, 
-.about-container p {
-    color: #222 !important; 
-    font-size: 1.15rem !important; /* Texto um pouco maior para monitores grandes */
-    max-width: 100%;
-}
-
-.about-container h3 {
-    margin-top: 30px;
-    border-bottom: 1px solid #999;
-    padding-bottom: 5px;
+    background-color: #d3d3d3 !important; /* Cor cinza clara do seu print */
+    display: block !important;
+    margin: 20px auto !important;
+    border-radius: 15px;
+    box-sizing: border-box;
+    width: 95% !important; /* No celular, ocupa quase tudo */
+    padding: 25px !important; /* Padding menor para não esmagar no celular */
 }
 
 .about-container p {
-    line-height: 1.8;
-    text-align: justify;
-    margin-bottom: 15px;
+    line-height: 1.6;
+    text-align: left !important; /* NO CELULAR: Alinha à esquerda para evitar buracos no texto */
+    color: #333;
 }
 
-.about-container .highlight {
-    font-weight: bold;
-    color: #000;
-}
-
-/* 3. Link de Voltar */
-.back-link {
-    display: inline-block;
-    margin-top: 40px;
-    color: #444;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-/* 4. Responsividade e Giro do Celular para o About */
-@media (orientation: landscape) and (max-height: 500px) {
-    body:has(.about-container) {
-        align-items: flex-start !important;
-        padding: 10px !important;
-    }
-    .about-container {
-        margin: 10px auto;
-    }
-}
-
-@media (max-width: 768px) {
+/* --- AJUSTE ESPECÍFICO PARA COMPUTADOR (TELAS GRANDES) --- */
+@media (min-width: 900px) {
     .container.about-container {
-        padding: 25px; /* Respiro menor no celular */
+        width: 90% !important;
+        max-width: 1200px !important;
+        padding: 60px 80px !important; /* Padding luxuoso só no PC */
+    }
+
+    .about-container p {
+        text-align: justify !important; /* NO PC: Justificado fica elegante */
+        font-size: 1.1rem;
+    }
+}
+
+/* --- AJUSTE PARA O "GIRO" DO CELULAR --- */
+@media (orientation: landscape) and (max-height: 500px) {
+    body {
+        align-items: flex-start !important;
+        padding-top: 20px;
     }
 }
