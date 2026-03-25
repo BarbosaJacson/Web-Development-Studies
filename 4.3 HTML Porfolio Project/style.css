@@ -143,45 +143,65 @@ p { line-height: 1.6; color: inherit; }
     color: #333;
 }
 
-/* --- AJUSTE ESPECÍFICO PARA COMPUTADOR (TELAS GRANDES) --- */
 @media (min-width: 900px) {
+    
     .container.about-container {
-        width: 90% !important;
-        max-width: 1920px !important;
-        padding: 60px 80px !important; /* Padding luxuoso só no PC */
-        justify-content: center;
-        flex-direction: column;
-        min-height: 90vh !important;  /* 'vh' significa Viewport Height. 90vh = 90% da altura da tela */
-        display: flex !important;
-    }
-
-    .about-container h1 {
-        font-size: 3.5rem !important; 
-        margin-bottom: 30px;
-    }
-
-    /* Os subtítulos (1, 2, 3) */
-    .about-container h3 {
-        font-size: 1.8rem !important; 
-        margin-top: 40px;
-    }
-
-    /* O corpo do texto (Onde você sugeriu 2.2rem) */
-    .about-container p {
-        text-align: justify !important;
-        /* Minha sugestão: 1.3rem a 1.4rem. 
-           É um tamanho "Premium" que passa autoridade sem exagerar. */
-        font-size: 1.35rem !important; 
-        line-height: 1.8 !important; /* Espaçamento entre linhas é vital aqui */
+        width: 96% !important;
+        max-width: 1800px !important;
+        min-height: 90vh !important;
+        padding: 60px !important;
         
-        /* IMPORTANTE: Não deixe o texto esticar os 1800px inteiros.
-           Mantenha o container do texto centralizado para o olho não cansar. */
-        max-width: 1000px; 
-        margin-left: auto;
-        margin-right: auto;
+        /* Forçamos os itens a ficarem um abaixo do outro, não lado a lado */
+        display: flex !important;
+        flex-direction: column !important; 
+        align-items: center !important; /* Centraliza tudo horizontalmente */
+        text-align: center;
+    }
+
+    /* 1. CENTRALIZANDO O TÍTULO H1 NO TOPO */
+    .about-container h1 {
+        font-size: 5.0rem !important; /* Bem imponente */
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        border-bottom: 5px solid #f0ca1f;
+        display: block !important;
+    }
+
+    /* 2. ORGANIZANDO O MENU (NAV) */
+    .about-container nav {
+        margin-bottom: 50px;
+        width: 100%;
+    }
+    .about-container nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        list-style: none;
+        padding: 0;
+    }
+
+    /* 3. AJUSTANDO AS SEÇÕES DE TEXTO */
+    .about-container section {
+        width: 100%;
+        max-width: 1100px; /* Limite de leitura para não cansar o olho */
+        margin-bottom: 40px;
+        text-align: justify; /* Texto justificado para elegância */
+    }
+
+    .about-container h3 {
+        font-size: 3.0rem !important; /* Subtítulos grandes */
+        margin-bottom: 15px;
+        text-align: left; /* Títulos das seções alinhados à esquerda */
+    }
+
+    .about-container p {
+        /* Aumentando a fonte como você sugeriu, mas com equilíbrio */
+        font-size: 2.2rem !important; 
+        line-height: 1.8 !important;
+        color: #333;
     }
 }
-
 /* --- AJUSTE PARA O "GIRO" DO CELULAR --- */
 @media (orientation: landscape) and (max-height: 500px) {
     body {
