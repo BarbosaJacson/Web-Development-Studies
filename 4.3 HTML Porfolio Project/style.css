@@ -129,16 +129,23 @@ p { line-height: 1.6; color: inherit; }
 .container.about-container {
     background-color: #d3d3d3 !important; /* Cor que você estava usando no interno */
     display: block !important;           /* Garante que o texto ocupe a largura toda */
-    max-width: 800px;
-    padding: 40px;
+    max-width: 1200px;
+    width: 90% !important; /* Garante que seja responsivo em telas menores */   
+    padding: 60px 80px !important;
+    margin: 50px auto !important;
     text-align: left;
 }
 
 /* 2. Ajuste de cores de texto para o card claro */
-.about-container h1, 
+.about-container h1{
+    font-size: 3rem !important;
+    margin-bottom: 30px;
+} 
 .about-container h3, 
 .about-container p {
     color: #222 !important; 
+    font-size: 1.15rem !important; /* Texto um pouco maior para monitores grandes */
+    max-width: 100%;
 }
 
 .about-container h3 {
