@@ -123,3 +123,63 @@ p { line-height: 1.6; color: inherit; }
         width: 200px;
     }
 }
+/* --- ESTILOS EXCLUSIVOS PARA A PÁGINA ABOUT --- */
+
+/* 1. O Card do About (Branco/Cinza claro para leitura) */
+.container.about-container {
+    background-color: #d3d3d3 !important; /* Cor que você estava usando no interno */
+    display: block !important;           /* Garante que o texto ocupe a largura toda */
+    max-width: 800px;
+    padding: 40px;
+    text-align: left;
+}
+
+/* 2. Ajuste de cores de texto para o card claro */
+.about-container h1, 
+.about-container h3, 
+.about-container p {
+    color: #222 !important; 
+}
+
+.about-container h3 {
+    margin-top: 30px;
+    border-bottom: 1px solid #999;
+    padding-bottom: 5px;
+}
+
+.about-container p {
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.about-container .highlight {
+    font-weight: bold;
+    color: #000;
+}
+
+/* 3. Link de Voltar */
+.back-link {
+    display: inline-block;
+    margin-top: 40px;
+    color: #444;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* 4. Responsividade e Giro do Celular para o About */
+@media (orientation: landscape) and (max-height: 500px) {
+    body:has(.about-container) {
+        align-items: flex-start !important;
+        padding: 10px !important;
+    }
+    .about-container {
+        margin: 10px auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .container.about-container {
+        padding: 25px; /* Respiro menor no celular */
+    }
+}
