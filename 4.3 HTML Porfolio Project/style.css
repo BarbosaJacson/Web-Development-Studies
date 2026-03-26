@@ -142,7 +142,7 @@ p { line-height: 1.6; color: inherit; }
     text-align: left !important; /* NO CELULAR: Alinha à esquerda para evitar buracos no texto */
     color: #333;
 }
-
+/* . ORGANIZANDO O MENU NO COMPUTADOR */
 @media (min-width: 900px) {
     
     .container.about-container {
@@ -156,7 +156,6 @@ p { line-height: 1.6; color: inherit; }
         
     }
 
-    /* 1. CENTRALIZANDO O TÍTULO H1 NO TOPO */
     .about-container h1 {
         font-size: 5.0rem !important; /* Bem imponente */
         width: 100%;
@@ -169,9 +168,15 @@ p { line-height: 1.6; color: inherit; }
 
     /* 2. ORGANIZANDO O MENU (NAV) */
     .about-container nav {
-        
-        margin-bottom: 50px;
-        width: 100%;
+        display: flex;
+        justify-content: center;
+        /* Espaço generoso entre Home, Projects e Linkedin */
+        gap: 60px !important; 
+        list-style: none;
+        padding: 0;
+        /* Fonte grande para fácil leitura e clique */
+        font-size: 1.8rem !important; 
+        margin-bottom: 40px;
     }
     .about-container nav ul {
         font-size: 2.0rem !important;
@@ -195,6 +200,7 @@ p { line-height: 1.6; color: inherit; }
     .about-container h3 {
         font-size: 3.0rem !important; /* Subtítulos grandes */
         margin-bottom: 15px;
+        margin-top: 30px;
         text-align: center;
     }
 
@@ -202,8 +208,8 @@ p { line-height: 1.6; color: inherit; }
         /* Aumentando a fonte como você sugeriu, mas com equilíbrio */
         font-size: 2.2rem !important; 
         line-height: 1.8 !important;
-        color: #333;
         text-align: justify; /* Justificado para melhor leitura em telas grandes */
+        color: #333;
     }
 }
 /* --- AJUSTE PARA O "GIRO" DO CELULAR --- */
