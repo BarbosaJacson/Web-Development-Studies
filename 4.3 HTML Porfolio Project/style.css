@@ -178,8 +178,8 @@ p { line-height: 1.6; color: inherit; }
 
     /* 2. O PULO DO GATO: FALANDO DIRETAMENTE COM O TEXTO DO LINK */
     .about-container nav ul li a {
-        font-size: 2.5rem !important; /* AGORA ELES CRESCEM! */
-        color: #2d9785 !important;    /* O verde que você escolheu */
+        font-size: 2.5rem !important; /* Fonte dos navegadores */
+        color: #141414 !important;    /* Cor preto fosco */
         text-decoration: none !important; /* Remove o sublinhado azul */
         font-weight: bold !important;  /* Deixa a letra mais robusta */
     }
@@ -213,11 +213,25 @@ p { line-height: 1.6; color: inherit; }
         text-align: justify; /* Justificado para melhor leitura em telas grandes */
         color: #333;
     }
-}
+
 /* --- AJUSTE PARA O "GIRO" DO CELULAR --- */
 @media (orientation: landscape) and (max-height: 500px) {
     body {
         align-items: flex-start !important;
         padding-top: 20px;
     }
+}
+.back-link {
+    display: inline-block;
+    margin-top: 30px;
+    text-decoration: none;
+    color: #151616; /* Preto fosco */
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.back-link:hover {
+    color: #0a0a0a; /* Preto */
+    transform: translateX(-5px); /* Efeito charmoso de empurrar para a esquerda */
 }
