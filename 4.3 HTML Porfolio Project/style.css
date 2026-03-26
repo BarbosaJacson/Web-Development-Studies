@@ -168,24 +168,27 @@ p { line-height: 1.6; color: inherit; }
 
     /* 2. ORGANIZANDO O MENU (NAV) - FOCO NO UL */
 .about-container nav ul {
-    display: flex !important;
-    justify-content: center !important;
-    gap: 80px !important; 
-    list-style: none !important;
-    padding: 0 !important;
-    margin-bottom: 50px !important;
-    
-    /* A FONTE DA VITÓRIA */
-    font-size: 2.5rem !important; 
-    text-align: center !important;
-}
+        display: flex !important;
+        justify-content: center !important;
+        gap: 80px !important; /* Espaço bem largo entre os links */
+        list-style: none !important;
+        padding: 0 !important;
+        margin-bottom: 50px !important;
+    }
 
-/* ESTILIZANDO OS LINKS ESPECIFICAMENTE */
-.about-container nav ul li a {
-    text-decoration: none;
-    color: #2d9785; 
-    font-weight: bold;
-    transition: 0.3s; /* Preparado para um futuro efeito de hover */
+    /* 2. O PULO DO GATO: FALANDO DIRETAMENTE COM O TEXTO DO LINK */
+    .about-container nav ul li a {
+        font-size: 2.5rem !important; /* AGORA ELES CRESCEM! */
+        color: #2d9785 !important;    /* O verde que você escolheu */
+        text-decoration: none !important; /* Remove o sublinhado azul */
+        font-weight: bold !important;  /* Deixa a letra mais robusta */
+    }
+
+    /* Bônus: Efeito ao passar o mouse */
+    .about-container nav ul li a:hover {
+        color: #0a0a0a !important; /* Muda para o amarelo da linha */
+        transition: 0.3s;
+    }
 }
 
     /* 3. AJUSTANDO AS SEÇÕES DE TEXTO */
