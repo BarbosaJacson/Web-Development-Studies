@@ -139,7 +139,7 @@ p { line-height: 1.6; color: inherit; }
 
 .about-container p {
     line-height: 1.6;
-    text-align: left !important; /* NO CELULAR: Alinha à esquerda para evitar buracos no texto */
+    text-align: justify !important; /* NO CELULAR: Alinha à esquerda para evitar buracos no texto */
     color: #333;
 }
 /* . ORGANIZANDO O MENU NO COMPUTADOR */
@@ -166,28 +166,27 @@ p { line-height: 1.6; color: inherit; }
         text-align: center;
     }
 
-    /* 2. ORGANIZANDO O MENU (NAV) */
-    .about-container nav {
-        display: flex;
-        justify-content: center;
-        /* Espaço generoso entre Home, Projects e Linkedin */
-        gap: 60px !important; 
-        list-style: none;
-        padding: 0;
-        /* Fonte grande para fácil leitura e clique */
-        font-size: 1.8rem !important; 
-        margin-bottom: 40px;
-    }
-    .about-container nav ul {
-        font-size: 2.0rem !important;
-        text-align: center;
-        color: #2d9785;
-        display: flex;
-        justify-content: center;
-        gap: 60px;
-        list-style: none;
-        padding: 0;
-    }
+    /* 2. ORGANIZANDO O MENU (NAV) - FOCO NO UL */
+.about-container nav ul {
+    display: flex !important;
+    justify-content: center !important;
+    gap: 80px !important; 
+    list-style: none !important;
+    padding: 0 !important;
+    margin-bottom: 50px !important;
+    
+    /* A FONTE DA VITÓRIA */
+    font-size: 2.5rem !important; 
+    text-align: center !important;
+}
+
+/* ESTILIZANDO OS LINKS ESPECIFICAMENTE */
+.about-container nav ul li a {
+    text-decoration: none;
+    color: #2d9785; 
+    font-weight: bold;
+    transition: 0.3s; /* Preparado para um futuro efeito de hover */
+}
 
     /* 3. AJUSTANDO AS SEÇÕES DE TEXTO */
     .about-container section {
