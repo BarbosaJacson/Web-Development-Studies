@@ -1,0 +1,23 @@
+/* Write your code here: */
+h1, h2 {
+  color: blueviolet;
+}
+.box > p {
+  color: firebrick;
+}
+.box > ul {
+  color: blue;
+}
+.box > ul > :first-child{
+  color: blue; /* This is a alternative.*/
+}
+.box > ul > :nth-child(2), .box > ul > :nth-child(3) {
+  color: seagreen;
+}
+.done li{
+  color: seagreen; /* This is a alternative.*/
+}
+
+ul p {
+  font-size: 0.5em;
+}
