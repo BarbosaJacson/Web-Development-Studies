@@ -4,10 +4,27 @@
 <head>
   <meta charset="UTF-8">
   <title>CSS Positioning Exercise</title>
-  <link rel="stylesheet" href="./style.css">
- 
+  
   <style>
     /* Write your code here */
+    .blue-box {
+      height: 300px;
+      width: 500px;
+      margin-left: 200px;
+      margin-top: 200px;
+      background-color: blue;
+      position: relative; /* This allows the red circle to be positioned relative to this box */
+    }
+    .red-circle {
+      width: 200px;
+      height: 200px;
+      background-color: red;
+      border-radius: 50%;
+      position: absolute;
+      margin-top:150px;
+      margin-left: 250px;
+    }
+
   </style>
 </head>
 
