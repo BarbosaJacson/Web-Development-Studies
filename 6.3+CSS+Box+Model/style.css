@@ -1,0 +1,34 @@
+
+    .box {
+      height: 200px;
+      width: 200px;
+    }
+    #box1 {
+      background-color: cadetblue;
+      padding: 20px;
+      border: 10px solid black;
+    }
+
+    #cadetblue {
+     background-color: cadetblue;
+     padding: 20px;
+     border: 10px solid black;
+}
+
+#gold {
+  background-color: gold;
+  border-width: 20px 10px; /* Top/Bottom 20px, Left/Right 10px */
+  border-style: solid;
+  border-color: black;
+  margin-left: 260px; /* Exemplo de deslocamento */
+}
+
+#indianred {
+  background-color: indianred;
+  border: 10px solid black;
+  margin-left: 40px;
+}
+
+p {
+  margin: 0;
+}
