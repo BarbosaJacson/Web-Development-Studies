@@ -10,34 +10,59 @@
     />
     <style>
       body {
-        
-        display: flex;
         font-family: "Sono", sans-serif;
-        min-height: 100vh;
-        justify-content: center;
-        background-color: white;
-        margin: 0;
-        
       }
       .pricing-container {
         display: flex;
-        flex-direction: column;
-        align-items: center;  
-        gap: 20px;
+        background-color: white;
+        gap: 2rem;
+        align-items: center;
+        
       }
       .pricing-plan {
+        flex: 1;
         background-color: rgb(216, 213, 213);
-        border-radius: 8px;
+        border-radius: 5px;
         padding: 20px;
-        width: 300px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        display: flex;
-        flex-direction: column;
-        
+        max-width: 400px;
+        align-items: center;
+        text-align: center; 
+      }
+      .plan-title {
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        text-align: center;   
+      }
+      .plan-price {
+        font-size: 48px;
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+      .plan-features {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 20px 0;
+        text-align: center;
+      }
+      .plan-button {
+        background-color: #ff6600;
+        color: white;
+        font-weight: bold;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 14px;
       }
 
       /* Hint: What can you do with a media query and flexbox? */
       @media (max-width: 1250px) {
+        .pricing-container {
+          flex-direction: column;
+          height: 100%;
+          
+        }
       }
     </style>
   </head>
@@ -46,7 +71,7 @@
     <div class="pricing-container">
       <div class="pricing-plan">
         <div class="plan-title">Basic</div>
-        <div class="plan-price">$9.99/month</div>
+        <div class="plan-price">$11.99/month</div>
         <ul class="plan-features">
           <li>✅ 10GB Storage</li>
           <li>✅ 1 User</li>
