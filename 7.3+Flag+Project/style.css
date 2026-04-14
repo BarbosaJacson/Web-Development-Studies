@@ -1,0 +1,37 @@
+
+    /* Write your CSS Code here */
+    .flag {
+      width: 900px;
+      height: 600px;
+      background-color: #d80027;
+      position: relative;
+    }
+    .flag > div {
+      width: 900px;
+      height: 200px;
+      background-color: #0052b4;
+      position: absolute;
+      top: 200px;
+    }
+    .flag > div > div {
+      width: 200px;
+      height: 200px;
+      background-color: #fff;
+      border-radius: 50%;
+      position: absolute;
+      left: 350px;
+    }
+    .flag p {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 75px;
+      color: #fff;
+      text-align: center;
+      margin: 0;
+    }
+    .flag > div > div p {
+      position: absolute;
+      color: black;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    } 
