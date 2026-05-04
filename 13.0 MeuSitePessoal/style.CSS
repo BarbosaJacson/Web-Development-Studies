@@ -1,0 +1,33 @@
+/* Estilo do Banner */
+.hero-banner {
+    background-color: rgb(183, 239, 247); /* A cor azul clara que ela usa */
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+}
+
+h1 {
+    font-family: 'Sacramento', cursive; /* Fonte que ela sugere */
+    font-size: 5.625rem; /* 90px */
+    color: #66BFBF;
+}
+
+p {
+    font-size: 2.5rem;
+    font-weight: normal;
+    color: #66BFBF;
+}
+
+/* Posicionamento das Nuvens e Montanha (Hora 2 do cronograma) */
+.top-cloud {
+    position: absolute;
+    right: 300px;
+    top: 50px;
+}
+
+.bottom-mountain {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
