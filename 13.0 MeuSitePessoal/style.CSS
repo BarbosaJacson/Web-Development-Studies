@@ -31,3 +31,11 @@ p {
     left: 50%;
     transform: translateX(-50%);
 }
+#about h2 {
+    color: #66BFBF; /* O turquesa clássico dela */
+    margin-top: 20px;
+}
+
+#sobre p {
+    line-height: 2; /* Deixa o texto mais legível e elegante */
+}
